@@ -1,0 +1,83 @@
+﻿2015/12/08 13:02:30 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Deep-Sparse-Autoencoder\VS2012\Deep\Deep.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /MP /Od /Ot /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /Qpar /fp:fast /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Deep_Sparse_Autoencoder.cpp
+         Deep_Sparse_Autoencoder.cpp
+     1>c:\deep-sparse-autoencoder\vs2012\deep\random.h(10): warning C4244: '=' : 'double' から 'int' への変換です。データが失われる可能性があります。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\tools.h(34): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : 'fscanf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\tools.h(48): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : 'fscanf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(344): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(371): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(378): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : 'fscanf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(405): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(426): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(447): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(469): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(502): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(549): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(80): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(87): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : 'fscanf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(136): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : 'scanf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(145): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : 'scanf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(150): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : 'scanf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(152): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(161): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(171): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(189): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : 'scanf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(230): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(231): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(236): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(249): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : 'scanf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(252): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(253): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(254): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(255): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(260): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(262): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(292): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+     1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(293): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Deep-Sparse-Autoencoder\VS2012\Debug\Deep Sparse Autoencoder.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Deep-Sparse-Autoencoder\VS2012\Debug\Deep Sparse Autoencoder.pdb" /SUBSYSTEM:CONSOLE /PGD:"C:\Deep-Sparse-Autoencoder\VS2012\Debug\Deep Sparse Autoencoder.pgd" /LTCG:PGOptimize /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Deep-Sparse-Autoencoder\VS2012\Debug\Deep Sparse Autoencoder.lib" /MACHINE:X86 Debug\Deep_Sparse_Autoencoder.obj
+     1>LINK : warning LNK4256: ガイド付き最適化のプロファイルはこの製品エディションでは使用できません。'PGD:C:\Deep-Sparse-Autoencoder\VS2012\Debug\Deep Sparse Autoencoder.pgd' は無視されます
+     1>LINK : warning LNK4256: ガイド付き最適化のプロファイルはこの製品エディションでは使用できません。'LTCG:PGOptimize' は無視されます
+     1>LINK : warning LNK4075: /INCREMENTAL は /LTCG の指定によって無視されます。
+     1>Deep_Sparse_Autoencoder.obj : warning LNK4075: /EDITANDCONTINUE は /OPT:LBR の指定によって無視されます。
+         LINK : /LTCG が指定されましたが、コードの生成は必要ありません。リンク コマンド ラインから /LTCG を削除し、リンカーの性能を改善してください。
+         Deep.vcxproj -> C:\Deep-Sparse-Autoencoder\VS2012\Debug\Deep Sparse Autoencoder.exe
+     1>プロジェクト "C:\Deep-Sparse-Autoencoder\VS2012\Deep\Deep.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.82

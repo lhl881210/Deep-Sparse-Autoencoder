@@ -24,12 +24,11 @@
 //      Plead for Buddha bless, NO BUG
 //
 // ---------------------------------------------------------------------------
-// Deep Sparse Autoencoder 
+// (Deep) Sparse Denoising Autoencoder
 //
-// Copyright (c) 2013-2015 HaiLong LIU. All rights reserved.
+// Programming by HaiLong LIU
 // ---------------------------------------------------------------------------
 
-//#include "stdafx.h"
 #include <math.h>
 #include "random.h"
 #include "matrix.h"
@@ -64,14 +63,14 @@ int VN=0,VD=0;
 int main(int argc, char *argv[])
 {
 srand( (unsigned)time( NULL ) );
-printf("-----------------------------------------------------------\n");
-printf("|                        Copyright                        |\n");
+printf("|---------------------------------------------------------|\n");
 printf("|---------------------------------------------------------|\n");
 printf("|           (Deep) Sparse Denoising Autoencoder           |\n");
-printf("| Copyright(c) 2013-2015 HaiLong LIU. All rights reserved |\n");
-printf("|                Email: liu@em.ci.ritsumei.ac.jp          |\n");
-printf("|                    2015.12.10                           |\n");
-printf("-----------------------------------------------------------\n\n");
+printf("|               Programming by HaiLong LIU                |\n");
+printf("|            Email: liu@em.ci.ritsumei.ac.jp              |\n");
+printf("|                  Update: 2015.12.10                     |\n");
+printf("|---------------------------------------------------------|\n\n");
+
 
 
 
@@ -96,14 +95,15 @@ A=setting[1];//L2 parameter
 B=setting[2];//Sparse parameter
 eck=setting[3];//error check(convergence condition)
 denoising_rate=setting[4];//denoising rate in [0,1] 
-printf("//////////////Parameters//////////////\n");
+printf("|---------------------------------------------------------|\n");
+printf("|        Parameters reading from [.//setting.txt]         |\n");
+printf("|---------------------------------------------------------|\n");
 printf("Sparse taget: p=%f\n",setting[0]);
 printf("L2norm intensity: A=%f\n",setting[1]);
 printf("Sparse intensity: B=%f\n",setting[2]);
 printf("Convergence condition: eck=%f\n",setting[3]);
 printf("Noise rate: noise_rate=%f\n",setting[4]);
-printf("Min_Var=%f\n",min_Var=setting[5]);
-printf("//////////////////////////////////////\n");
+printf("Min_Var=%f\n\n",min_Var=setting[5]);
 
 
 
