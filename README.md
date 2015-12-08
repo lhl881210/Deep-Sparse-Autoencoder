@@ -21,3 +21,5 @@ Thanks.
 
 Hailong LIU
 2015.12.10
+
+Code migrating for Linux by Ryo Nakashima.
