@@ -265,7 +265,7 @@ void BP_ALL(double **V,double **Wh,double **Wr,int VN,int VD,int HD,double eck,d
 int i,j,k;
 double errorck=LDBL_MAX;
 
-double SP=0,L2_Wh=0,L2_Wr=0,e_all=1;
+double SP=0,L2_Wh=0,L2_Wr=0,e_all=1.0;
 double *p_hat=d_CreateONEDimensionalArray(HD+1);
 double *r=d_CreateONEDimensionalArray(VD+1);
  double *h=d_CreateONEDimensionalArray(HD+1);
@@ -280,7 +280,7 @@ double Var=1.0;
 min_Var=setting[5];
  int loop=0;
  double **V_denoising=d_CreateTwoDimensionalArray(VN,VD+1); 
-while(e_all>= eck){
+while(errorck>= eck){
 start = clock(); 	 
 ertemp=e_all;
 //パラメータ//
@@ -299,7 +299,7 @@ for(i=0;i<VN;i++){
 		double tmp = d_rndn(1);//printf("tmp=%f\t",tmp);
 					if (tmp < denoising_rate&&tmp>0) {
 						//printf("[%d][%d]=",i,j);
-						V_denoising[i][j]=Guassian2(V[i][j],Var,ppp);
+						V_denoising[i][j]=Gaussian2(V[i][j],Var,ppp);
 						if(ppp==1)ppp=0;
 						else if(ppp==0)ppp=1;
 					}
@@ -358,6 +358,7 @@ printf("Var=%f\t",Var);
 fprintf(BFGS,"%f\t",Var);	
 
 errorck=fabs(ertemp-e_all);
+//printf("errorck=%f\t",errorck);
 step=errorck+0.1;    
 finish = clock();  
    duration = (double)(finish - start) / CLOCKS_PER_SEC;  
@@ -561,6 +562,104 @@ while(_getch()!=32);
 }
 
 }
+////////////////隠れ層(特徴)を出力/////////////////////
+FILE *H_OUT;
+
+
+
+                            if((H_OUT=fopen(H_OUT_filename,"w"))==NULL){
+						   printf("Cannot open file %s.\n",H_OUT_filename);
+							//system("pause");
+						    
+						   }    
+							else{ 
+                             for(i=0;i<VN;i++){
+                                              h=hidden(V[i],h,Wh,VD,HD);
+                                               for(k=0;k<HD;k++){
+                                                               if(k<HD-1) fprintf(H_OUT,"%f\t",h[k]);
+															   else fprintf(H_OUT,"%f",h[k]);
+											   }
+                                               fprintf(H_OUT,"\n");
+                                          }
+						   
+                              fclose(H_OUT);
+							}
+////////////////encoderの重み行列とバイアスを出力/////////////////////
+FILE *W_H;
+
+
+                            if((W_H=fopen(W_H_filename,"w"))==NULL){
+						   printf("Cannot open file %s.\n",W_H_filename);
+							//system("pause");
+						    
+						   }  
+							else{  
+                             for(i=0;i<VD+1;i++){
+                                             
+                                               for(k=0;k<HD;k++){
+                                                                if(k<HD-1)fprintf(W_H,"%f\t",Wh[i][k]);
+																else fprintf(W_H,"%f",Wh[i][k]);
+											   }
+                                               fprintf(W_H,"\n");
+                                          }
+						   
+                              fclose(W_H);
+							}
+////////////////decoderの重み行列とバイアスを出力/////////////////////
+FILE *W_R;
+
+
+                           if((W_R=fopen(W_R_filename,"w"))==NULL){
+						   printf("Cannot open file %s.\n",W_R_filename);
+							//system("pause");
+						    
+						   }
+						   else{  
+                             for(i=0;i<HD+1;i++){
+                                             
+                                               for(k=0;k<VD;k++){
+                                                                if(k<(VD-1))fprintf(W_R,"%f\t",Wr[i][k]);
+																else fprintf(W_R,"%f",Wr[i][k]);
+											   }
+                                               fprintf(W_R,"\n");
+                                          }
+						   
+                              fclose(W_R);
+						   }
+							
+
+////////////////Reconstructionを出力/////////////////////
+FILE *V_Re;	
+				
+ if((V_Re=fopen(V_Re_filename,"w"))==NULL){
+						   printf("Cannot open file %s.\n",W_R_filename);
+							//system("pause");
+						    
+						   }
+			else{  
+				
+				for(i=0;i<VN;i++){						   
+								 h=hidden(V[i],h,Wh,VD,HD);
+								r=reconstruction(h,r,Wr,VD,HD);
+						   for(k=0;k<VD;k++){
+														        if(k<(VD-1))fprintf(V_Re,"%f\t",r[k]);
+																else fprintf(V_Re,"%f",r[k]);
+											   }
+                                               fprintf(V_Re,"\n");
+
+				}
+			}
+				 fclose(W_R);
+
+
+printf("\n-----------------------------------------------------\n");
+printf("  Hidden values and weight matrixes were saved in:   \n");
+printf("./%s\n",H_OUT_filename);
+printf("./%s\n",W_H_filename);
+printf("./%s\n",W_R_filename);
+printf("./%s\n",V_Re_filename);
+printf("-----------------------------------------------------\n");
+
 DeleteTwoDimensionalArray(V_denoising,VN,VD+1);
 free(p_hat);
 free(r);

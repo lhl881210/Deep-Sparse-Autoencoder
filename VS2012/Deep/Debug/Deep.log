@@ -1,4 +1,4 @@
-﻿2015/12/08 13:02:30 にビルドを開始しました。
+﻿2015/12/08 14:42:20 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Deep-Sparse-Autoencoder\VS2012\Deep\Deep.vcxproj" (Build ターゲット)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /MP /Od /Ot /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /Qpar /fp:fast /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Deep_Sparse_Autoencoder.cpp
@@ -10,21 +10,21 @@
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : 'fscanf' の宣言を確認してください。
      1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(344): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
-     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(371): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(372): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
-     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(378): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(379): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : 'fscanf' の宣言を確認してください。
-     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(405): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(406): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
-     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(426): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(427): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
-     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(447): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(448): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
-     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(469): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(470): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
-     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(502): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(503): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
-     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(549): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\deep-sparse-autoencoder\vs2012\deep\bp_method.h(550): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
      1>c:\deep-sparse-autoencoder\vs2012\deep\deep_sparse_autoencoder.cpp(80): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' の宣言を確認してください。
@@ -80,4 +80,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:00.82
+経過時間 00:00:00.91
