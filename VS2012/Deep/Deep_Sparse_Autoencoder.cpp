@@ -273,7 +273,7 @@ if(Model==1){
 for(int ppp=1,i=0;i<VD+1;i++)
 	  for(j=0;j<HD;j++){
 					
-		  Wh[i][j]=Gaussian2(0,0.2,ppp);//d_rndn(99)/10000+0.0001; //Initialize weights of encoder by Gaussian
+		  Wh[i][j]=Guassian2(0,0.2,ppp);//d_rndn(99)/10000+0.0001; //Initialize weights of encoder by Guassian
 		  if(ppp==1)ppp=0;
 		  else if(ppp==0)ppp=1;
 	 // printf("%f\n",Wh[i][j]);system("pause");
@@ -281,7 +281,7 @@ for(int ppp=1,i=0;i<VD+1;i++)
 
 for(int ppp=1,i=0;i<HD+1;i++)
 	  for(j=0;j<VD;j++){
-		  Wr[i][j]=Gaussian2(0,0.2,ppp);//d_rndn(99)/10000+0.0001;//Initialize weights of decoder by Gaussian
+		  Wr[i][j]=Guassian2(0,0.2,ppp);//d_rndn(99)/10000+0.0001;//Initialize weights of decoder by Guassian
 			if(ppp==1)ppp=0;
 		  else if(ppp==0)ppp=1;
 	  }

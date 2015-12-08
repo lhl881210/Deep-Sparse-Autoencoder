@@ -19,7 +19,7 @@ double d_rndn (double r){
 }
  
    
-  double  Gaussian2(double   mu,double   sigma,int ppp)  
+  double  Guassian2(double   mu,double   sigma,int ppp)  
   {  
     double   r1,r2,y,out;  
    
