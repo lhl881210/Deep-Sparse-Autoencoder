@@ -1,4 +1,4 @@
-﻿2015/12/08 13:02:30 にビルドを開始しました。
+﻿2015/12/09 13:09:07 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Deep-Sparse-Autoencoder\VS2012\Deep\Deep.vcxproj" (Build ターゲット)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /MP /Od /Ot /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /Qpar /fp:fast /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Deep_Sparse_Autoencoder.cpp
@@ -80,4 +80,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:00.82
+経過時間 00:00:01.77

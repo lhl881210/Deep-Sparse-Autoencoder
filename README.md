@@ -7,9 +7,8 @@
 |         https://sites.google.com/site/lhl881210/        |
 |---------------------------------------------------------|
 
+This source is licensed by CC BY-NC-SA.
 
-I waive copyright for this program and open the source code.
-But this source is prohibited for commercial purposes.
 
 I hope this source code can support your research, 
 and welcome to modify the code to find a bug and enhance the computing speed.
