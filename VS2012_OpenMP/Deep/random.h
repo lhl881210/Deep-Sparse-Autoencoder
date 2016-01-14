@@ -26,7 +26,7 @@ double d_rndn (double r){
     r1=d_rndn(0.99999999)+0.000000001;  
     r2=d_rndn(0.99999999)+0.000000001;  
    
-	
+#pragma omp parallel if (2)	
 	if(ppp==1)y=sqrt(-2*log(r1))*cos(2*M_PI*r2);
 	else if(ppp==0)y=sqrt(-2*log(r1))*sin(2*M_PI*r2);
 
