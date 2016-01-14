@@ -111,7 +111,7 @@ double e_all;
 									  
 									 
 #pragma omp parallel for private(i) schedule(dynamic)
-									  for (i = 0; i < VN; i++)    R[i] = reconstruction(H[i], R[i], Wr, VD, HD);
+									  for (i = 0; i < VN; i++)    R[i] = reconstruction(H[i], R[i], t_Wr, VD, HD);
 
 									  for (i = 0, e_all = 0; i < VN; i++)
 										    e_all = e_all + error(V[i], R[i], VD);
@@ -151,46 +151,44 @@ double e_all;
 } 
 
 ////////////////////////////////////BP():1‰ñ‚ÌŒP—û////////////////////////////////////////////////////////////////
-void BP(double **V,double **V_denoising,double **Wh,double **Wr,int VN,int VD,int HD,double eck,double p,double A,double B,double step){
-int i,j,k;
-double **d_Wh=d_CreateTwoDimensionalArray(VD+1,HD);
-double **d_Wr=d_CreateTwoDimensionalArray(HD+1,VD);
+void BP(double **V, double **V_denoising, double **Wh, double **Wr, double **H, double **R , int VN, int VD, int HD, double eck, double p, double A, double B, double step){
+	int i, j, k;
+	double **d_Wh = d_CreateTwoDimensionalArray(VD + 1, HD);
+	double **d_Wr = d_CreateTwoDimensionalArray(HD + 1, VD);
 
 
-//double *h=d_CreateONEDimensionalArray(HD+1);
-double **H = d_CreateTwoDimensionalArray(VN, HD + 1);
-double **R = d_CreateTwoDimensionalArray(VN, VD + 1);
-//double *r=d_CreateONEDimensionalArray(VD+1);
-double *p_hat=d_CreateONEDimensionalArray(HD);
-double *d_r=d_CreateONEDimensionalArray(VD);
-double *d_h=d_CreateONEDimensionalArray(HD);
-double *temp=d_CreateONEDimensionalArray(HD);
-       
+	//double *h=d_CreateONEDimensionalArray(HD+1);
+	//double *r=d_CreateONEDimensionalArray(VD+1);
+	double *p_hat = d_CreateONEDimensionalArray(HD);
+	double *d_r = d_CreateONEDimensionalArray(VD);
+	double *d_h = d_CreateONEDimensionalArray(HD);
+	double *temp = d_CreateONEDimensionalArray(HD);
 
-clear_matrix(d_Wr,VD,HD+1);
-clear_matrix(d_Wh,HD,VD+1);
-clear_vector(d_r,VD);
-clear_vector(d_h,HD);
-clear_vector(p_hat,HD);
+
+	clear_matrix(d_Wr, VD, HD + 1);
+	clear_matrix(d_Wh, HD, VD + 1);
+	clear_vector(d_r, VD);
+	clear_vector(d_h, HD);
+	clear_vector(p_hat, HD);
 
 #pragma omp parallel for private(i) schedule(dynamic)
-for (i = 0; i<VN; i++) 
-	H[i] = hidden(V_denoising[i], H[i], Wh, VD, HD);
-	
+	for (i = 0; i < VN; i++) {
+		H[i] = hidden(V_denoising[i], H[i], Wh, VD, HD);
+		R[i] = reconstruction(H[i], R[i], Wr, VD, HD);
+	}
 
-for (i = 0; i<VN; i++) for (j = 0; j<HD; j++) p_hat[j] = p_hat[j] + H[i][j];
+	for (j = 0; j < HD; j++){
+		for (i = 0; i < VN; i++)
+			p_hat[j] = p_hat[j] + H[i][j];
 
-							
-                            for(j=0;j<HD;j++)  p_hat[j]=(p_hat[j]/VN+1)/2;
+		p_hat[j] = (p_hat[j] / VN + 1) / 2;
+	}
                                                                                                        
 
-
-#pragma omp parallel for private(i) schedule(dynamic)
-							for (i = 0; i < VN; i++)    R[i] = reconstruction(H[i], R[i], Wr, VD, HD);
                                                                                  
                                            
                                               
-									for (i = 0; i<VN; i++){
+for (i = 0; i<VN; i++){
 
 #pragma omp parallel for private(j) schedule(dynamic) 
 										for (j = 0; j < VD; j++)  
@@ -268,8 +266,6 @@ for (j = 0; j < HD+1; j++)
 
 DeleteTwoDimensionalArray(d_Wh,VD+1,HD);
 DeleteTwoDimensionalArray(d_Wr,HD+1,VD);
-DeleteTwoDimensionalArray(H, VN, HD + 1);
-DeleteTwoDimensionalArray(R, VN, VD + 1);
 //free(h);
 free(temp);
 free(p_hat);
@@ -341,7 +337,7 @@ for(i=0;i<VN;i++){
 
 
 
-BP(V,V_denoising,Wh,Wr,VN,VD,HD,eck,p,A,B,step);//BP():1‰ñ‚ÌŒP—û
+BP(V,V_denoising,Wh,Wr,H,R,VN,VD,HD,eck,p,A,B,step);//BP():1‰ñ‚ÌŒP—û
 
  clear_vector(p_hat,HD);
 
