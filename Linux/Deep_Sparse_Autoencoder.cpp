@@ -307,6 +307,6 @@ if(Model==2){
 BP_ALL(V,Wh,Wr,VN,VD,HD,eck,p,A,B);//Train SAE by BP method
 
 
- system("pause");
+ 
 	return 0;
 }

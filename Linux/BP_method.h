@@ -1,7 +1,9 @@
 
-#include <algorithm>
 #include <time.h>
+#ifdef linux
 #include "my_conio.h"
+#include <algorithm>
+#endif
 
 double LR_h(double **V,double **V_denoising,double **Wh,double **Wr,double **dH_Wh,int VN,int VD,int HD,double eck,double p,double A,double B,double step){
        int i,j,k;

@@ -37,7 +37,10 @@
 #include <time.h>
 #include <stdio.h>  
 #include <stdlib.h> 
+#ifdef _WIN32
 #include <conio.h>
+#endif
+
  char H_OUT_filename[250] = {'\0'};
  char W_H_filename[250] = {'\0'};
  char W_R_filename[250] = {'\0'};

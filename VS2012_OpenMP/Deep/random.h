@@ -3,8 +3,10 @@
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
+#ifdef _WIN32
 #include <windows.h>
- 
+#endif
+
  int rndn (int r){
   int rndno;
   while((rndno=((int)rand()/(RAND_MAX+1.0))*r)==r);
